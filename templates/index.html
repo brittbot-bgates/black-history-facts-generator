@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="This website automatically displays a random Black History fact every ten seconds.">
+  <meta http-equiv="refresh" content="10">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.bhfgen.com/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.bhfgen.com/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.bhfgen.com/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://www.bhfgen.com/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://www.bhfgen.com/static/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="https://www.bhfgen.com/static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="https://www.bhfgen.com/static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/normalize.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7cebd9718b.js" crossorigin="anonymous"></script>
+  <title>Black History Facts Generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="intro">
+        <h1>Black History Facts Generator</h1>
+        <h6>This website automatically refreshes every 10 seconds.</h6>
+      </div>
+
+      <div class="facts">
+        <h3>Black History Fact: {{ black_history_fact }}</h3>
+      </div>
+
+      <div class="social-media">
+        <p>Created by Brittany Gates</p>
+        <a href="https://www.brittanygates.me" title="My Blog" target="_blank">My Blog</a> -
+        <a href="https://brittbot.com/" title="All About Website Creation" target="_blank">Brittbot</a> -
+        <a href="https://www.linkedin.com/in/brittanygates/" title="My LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a> -
+        <a href="https://twitter.com/bgates_writer" title="My Personal Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a> -
+        <a href="https://twitter.com/brittbot_bgates" title="Brittbot Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
