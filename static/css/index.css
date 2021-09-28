@@ -1,189 +1,122 @@
 body {
-  background-color: #000;
+  background-color: #008080;
   color: #FFF;
 }
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3em;
-}
-
-h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3em;
-}
-
-h6 {
-  padding-top: 1em;
-}
-
 a {
-  color: #990000;
+  color: #FFD700;
 }
 
 a:hover {
   text-decoration: none;
-  color: #003d99;
+  color: #98FB98;
+}
+
+.desktop-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  margin-top: 75px;
+}
+
+.desktop-subtitle {
+  font-size: 14px;
+}
+
+.desktop-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  padding: 10px;
 }
 
 .intro {
   margin: auto;
   display: block;
-  margin-top: 4em;
-  margin-bottom: 4em;
   text-align: center;
 }
 
-.facts {
-  padding: 2em;
-  border: 0.5em solid #FFF;
+.desktop-facts {
+  margin-top: 100px;
+  border: 6px solid #FFF;
+  padding: 4px;
 }
 
-.social-media {
-  margin: auto;
-  display: block;
-  font-family: 'Indie Flower', cursive;
-  font-size: 2em;
+.desktop-social-media {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   text-align: center;
-  margin-top: 4em;
 }
 
-/*
-Media queries for various screen sizes. Thanks to media-query.css
-https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
-*/
-
-/*
-##Device = Desktops
-##Screen = 1281px to higher resolution desktops
-*/
-
-/* @media (min-width: 1281px) {
-
-} */
-
-/*
-##Device = Laptops, Desktops
-##Screen = B/w 1025px to 1280px
-*/
-
-/* @media (min-width: 1025px) and (max-width: 1280px) {
-
-} */
-
-/*
-##Device = Tablets, Ipads (portrait)
-##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  h1 {
-    font-size: 2.5em;
+@media screen and (max-width: 480px) {
+  .mobile-small-h1 {
+    font-size: 20px;
+    margin-top: 10px;
   }
 
-  h3 {
-    font-size: 2.5em;
+  .mobile-small-subtitle {
+    font-size: 10px;
   }
 
-  h6 {
-    padding-top: 0.25em;
-    font-size: 0.75em;
+  .mobile-small-h2 {
+    font-size: 20px;
+    padding: 2px;
   }
 
-  .social-media {
-    font-size: 1.5em;
-    margin-top: 2em;
+  .mobile-small-facts {
+    margin-top: 10px;
+    border: 2px solid #FFF;
+  }
+
+  .mobile-small-social-media {
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
-/*
-##Device = Tablets, Ipads (landscape)
-##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  h3 {
-    font-size: 2.5em;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-small-h1 {
+    font-size: 30px;
+    margin-top: 10px;
   }
 
-  h6 {
-    font-size: 0.75em;
+  .mobile-small-subtitle {
+    font-size: 12px;
   }
 
-  .social-media {
-    font-size: 1.5em;
-    margin-top: 2em;
-  }
-}
-
-/*
-##Device = Low Resolution Tablets, Mobiles (Landscape)
-##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  h1 {
-    font-size: 1.75em;
+  .mobile-small-h2 {
+    font-size: 30px;
+    padding: 2px;
   }
 
-  h3 {
-    font-size: 1.75em;
+  .mobile-small-facts {
+    margin-top: 20px;
+    border: 4px solid #FFF;
   }
 
-  h6 {
-    padding-top: 0.25em;
-    font-size: 0.75em;
-  }
-
-  .intro {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .facts {
-    margin: 0.75em;
-    padding: 0.5em;
-    border: 0.25em solid #FFF;
-  }
-
-  .social-media {
-    font-size: 1.5em;
-    margin-top: 2em;
+  .mobile-small-social-media {
+    position: relative;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
   }
 }
 
-/*
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  h1 {
-    font-size: 1.5em;
+@media screen and (max-width: 1024px) {
+  .mobile-large-h1 {
+    margin-top: 10px;
   }
 
-  h3 {
-    font-size: 1.5em;
+  .mobile-large-h2 {
+    padding: 2px;
   }
 
-  h6 {
-    padding-top: 0.25em;
-    font-size: 0.75em;
-  }
-
-  .intro {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .facts {
-    margin: 0.75em;
-    padding: 0.5em;
-    border: 0.25em solid #FFF;
-  }
-
-  .social-media {
-    font-size: 1.25em;
-    margin-top: 2em;
+  .mobile-large-facts {
+    margin-top: 20px;
+    border: 4px solid #FFF;
   }
 }
