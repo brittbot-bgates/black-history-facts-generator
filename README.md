@@ -8,4 +8,4 @@ I wrote this app about two years ago (at least) usng Python and Flask. It starte
 9/28/21: After translating the code into JavaScript/Node for another project I liked the frontend redesign that I copied it over to this project. Because of that I created a new version called "build_v1."
 
 ## Website
-[Black History Facts Genererator (BHFGEN)](https://bhfgen.com)
+[Black History Facts Genererator](bhfgen.com)
